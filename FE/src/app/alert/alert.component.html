@@ -1,0 +1,6 @@
+<div *ngIf="message != ''" class="alert alert-{{type}}" role="alert">
+  {{ message }}
+  <ul *ngIf="messages.length > 0">
+    <li *ngFor="let msg of messages">{{msg}}</li>
+  </ul>
+</div>
