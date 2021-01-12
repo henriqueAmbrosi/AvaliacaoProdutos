@@ -12,7 +12,7 @@ class Product extends Model
         'updated_at'
     ];
 
-    public function interests()
+    public function ratings()
     {
         return $this->hasMany('App\ProductRating');
     }
